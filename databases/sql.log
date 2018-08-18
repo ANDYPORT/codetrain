@@ -7,3 +7,8 @@ CREATE TABLE "users"(
     "db_password" CHAR(512)
 );
 success!
+timestamp: 2018-08-11T13:22:33.273000
+ALTER TABLE "users" ADD "db_hometown" CHAR(512);
+timestamp: 2018-08-11T13:22:33.545000
+ALTER TABLE "users" ADD "db_age" CHAR(512);
+success!

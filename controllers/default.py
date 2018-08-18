@@ -6,12 +6,17 @@ def store():
     submitted_lastname = request.vars.lastname
     submitted_email = request.vars.email
     submitted_password = request.vars.password
+    submitted_hometown = request.vars.hometown 
+    submitted_age = request.vars.age 
+
 
     results = db.users.insert(
         db_firstname=submitted_firstname,
         db_lastname = submitted_lastname,
         db_email = submitted_email,
-        db_password = submitted_password
+        db_password = submitted_password,
+        db_hometown = submitted_hometown,
+        db_age = submitted_age
     )
 
     if results:
